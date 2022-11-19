@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bloop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-light navbar-expand-md">
+            <div class="container-fluid">
+                <img src="images/logo.svg" alt="logo MPGB">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header justify-content-between">
+                    <h3 class="offcanvas-title" id="offcanvasNavbarLabel">Portfolio</h3>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body py-0">
+                  <ul class="navbar-nav justify-content-end flex-grow-1">
+                    <li class="nav-item">
+                        <div><a class="nav-link" href="#">Works</a></div>
+                    </li>
+                    <li class="nav-item">
+                        <div><a class="nav-link" href="#">Contact</a></div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <section class="container-fluid banner mt-5">
+    </section>
+
+    <section class="container-fluid mt-5 px-0">
+        <h1>Nautical photography</h1>
+        <p>
+            Hi! My name is María Paz García Ballester, although I also have a nautical name: Medusa. I was practically born on a sail boat, so my love for sailing has been lifelong. Another activity I enjoy is photography; of cityscapes, nature, people, but mainly, you guessed it: sailing. 
+        </p>
+
+
+        <!-- Galllery -->
+
+        <div class="row galery">
+
+            <div class="col-xs-12 col-sm-6 col-lg-4 mt-5">
+              <a href="images/img1.jpg" data-lightbox="image-set" data-title="Peeking"><img src="images/img1.jpg" class=" img-thumbnail" alt="Boy peeking from behind a sail"></a>
+                
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-lg-4 mt-5">
+              <a href="images/img2.jpg" data-lightbox="image-set" data-title="Bow"><img src="images/img2.jpg" class=" img-thumbnail" alt="Detail of ropes at sailboat bow"></a>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-lg-4 mt-5">
+              <a href="images/img3.jpg" data-lightbox="image-set" data-title="Sun"><img src="images/img3.jpg" class=" img-thumbnail" alt="Sun seen through a space between dismantled bimini tubes"></a>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-lg-4 mt-5">
+              <a href="images/img4.jpg" data-lightbox="image-set" data-title="Nother bow"><img src="images/img4.jpg" class=" img-thumbnail" alt="detail of pulleys at sailboat bow"></a>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-lg-4 mt-5">
+              <a href="images/img5.jpg" data-lightbox="image-set" data-title="Starboard"><img src="images/img5.jpg" class=" img-thumbnail" alt="detail of starboard deck"></a>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-lg-4 mt-5">
+              <a href="images/img6.jpg" data-lightbox="image-set" data-title="Ropes"><img src="images/img6.jpg" class=" img-thumbnail" alt="detail of ropes on deck"></a>
+            </div>
+        
+        </div>
+    </section>
+
+
+    <!-- Contact -->
+
+    <section class="container-fluid contact">
+      <div class="row">
+      <div class="col-md-12 col-lg-6 mt-5">
+        <h2>Contact me</h2>
+        <p>Do you need a photographer? Do you have any questions?</p>
+        <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Contact</button>
+          
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h3 class="modal-title" id="staticBackdropLabel">Contact me</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="row">
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-12 mt-2">
+                                <label for="name" class="form-label mb-1">Name</label>
+                                <input type="text" class="form-control" id="name" required>
+                            </div>
+                            <div class="col-12 mt-2">
+                                <label for="surname" class="form-label mb-1">Surname</label>
+                                <input type="text" class="form-control" id="surname" required>
+                            </div>
+                            <div class="col-12 mt-2">
+                                <label for="email" class="form-label mb-1">Email</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="col-12 mt-2">
+                                <label for="subject" class="form-label mb-1">Subject</label>
+                                <input type="text" class="form-control" id="asunto" required>
+                            </div>
+                            <div class="col-12 mt-2">
+                                <label for="menssage" class="form-label mb-1">Your message</label>
+                                <textarea class="form-control" id="menssage" rows="3" required></textarea>
+                            </div>
+                            <div class="d-grid gap-2 d-md-block mt-3">
+                              <input type="submit" class="btn btn-dark" value="Send">
+                          </div> 
+                        </div>
+                    </div>
+                    </div>
+                    </form>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+      <div class="col-md-12 col-lg-6 mt-5">
+        <p>Some sailing in action:</p>
+        <video controls src="images/sail.mp4" class="d-block w-100"></video> 
+      </div>
+    </div>
+    </section>
+
+    <footer>
+      <ul>
+          <li><a href="https://www.instagram.com/mp_garciaballester/" target="_blank"><img src="images/instagram.svg" alt="Instagram"></a></li>
+          <li><a href="https://www.behance.net/mariapgarcia4" target="_blank"><img src="images/behance.svg" alt="Behance"></a></li>
+          <li><a href="https://www.linkedin.com/" target="_blank"><img src="images/linkedin.svg" alt="Linkedin"></a></li>
+      </ul>
+  </footer>
+
+
+    <!-- Sripts -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox-plus-jquery.min.js"></script>
+
+    <script>
+        lightbox.option({
+            'wrapAround': true,
+            'positionFromTop': 200,
+            'resizeDuration': 2000,
+            'albumLabel':	"Image %1 of %2"
+        })
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    
+
+</body>
+</html>
